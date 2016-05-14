@@ -37,6 +37,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('tmp')
 
 before 'deploy', 'rvm1:install:rvm'
 before 'deploy', 'rvm1:install:ruby'
+set :rvm1_alias_name, 'ktchn'
 
 namespace 'ktchn' do
   namespace 'deploy' do
