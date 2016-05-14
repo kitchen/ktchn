@@ -45,6 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   capistrano
   minitest
   new_base_60
