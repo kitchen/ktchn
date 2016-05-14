@@ -9,9 +9,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundler (1.1.4)
-      capistrano (~> 3.1)
-      sshkit (~> 1.2)
     capistrano-harrow (0.5.1)
     coderay (1.1.1)
     i18n (0.7.0)
@@ -48,9 +45,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
   capistrano
-  capistrano-bundler
   minitest
   new_base_60
   pry
