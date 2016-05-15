@@ -50,7 +50,10 @@ namespace 'ktchn' do
       end
     end
   end
+end
+after 'deploy:publishing', 'ktchn:deploy:restart'
 
+namespace 'ktchn'
   namespace 'rvm1' do
     task :disable_autolibs do
       on roles(fetch(:rvm1_roles, :all)) do
@@ -61,6 +64,4 @@ namespace 'ktchn' do
     end
   end
 end
-
 before 'rvm1:install:ruby', 'ktchn:rvm1:disable_autolibs'
-after 'deploy:publishing', 'ktchn:deploy:restart'
