@@ -53,7 +53,7 @@ namespace 'ktchn' do
 end
 after 'deploy:publishing', 'ktchn:deploy:restart'
 
-namespace 'ktchn'
+namespace 'ktchn' do
   namespace 'rvm1' do
     task :disable_autolibs do
       on roles(fetch(:rvm1_roles, :all)) do
